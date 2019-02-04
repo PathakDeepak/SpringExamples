@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+  <!-- Here single object is created for Test class even if request is called multiple times -->
+  <bean id="t" class="helloWorld.Test" scope="singleton"/> 
+  
+  <!-- if multiple object required for Test class use: 
+   <bean id="t" class="helloWorld.Test" scope="prototype" /> -->
+</beans>

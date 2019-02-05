@@ -1,4 +1,4 @@
-package helloWorld;
+package day1HelloWorld;
 
 public class Test {
 

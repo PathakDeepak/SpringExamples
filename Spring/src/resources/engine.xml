@@ -1,0 +1,12 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+   <!-- *********************************Instantiating the bean class object************************* -->
+          <bean id="e" class="day3Setter_DI_Secondary_type.Enginebean">
+            <property name="modelYear" value="2015"></property>
+          </bean>
+   <!-- ********************************************************** -->
+   
+   
+   
+</beans>

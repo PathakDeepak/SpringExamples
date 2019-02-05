@@ -1,4 +1,4 @@
-package dependencyInjection;
+package day2DependencyInjection;
 
 public class ConstructorInjection {
 	

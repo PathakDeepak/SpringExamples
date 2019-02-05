@@ -1,0 +1,10 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="c" class="day3Setter_DI_Secondary_type.Carbean" >
+       <property name="carname" value="AUDI"></property>
+       <property name="engine" ref="e"></property>
+  </bean>
+   
+   
+</beans>

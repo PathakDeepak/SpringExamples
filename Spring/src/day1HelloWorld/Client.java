@@ -1,4 +1,4 @@
-package helloWorld;
+package day1HelloWorld;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;

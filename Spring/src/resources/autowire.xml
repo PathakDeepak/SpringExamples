@@ -1,0 +1,24 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<!-- autowire can be of 4 type
+     1> byType- here we need to set autowire-candidate attribute to false if there are more than 1 bean
+        objects created in xml file. Note this is done using setter.-->
+        <bean id="c" class="day4Autowire.Car" autowire="byType">
+    <!--2> byName- here to get object instance we need to pass exact same id as set in bean id.
+        Note this is done using setter
+        <bean id="c" class="day4Autowire.Car" autowire="byName"> -->
+        
+    <!-- 3> constructor- here the bean instance is created using constructor. here also if more than 1 object
+        are there we need to set autowire-candidate attribute to false Note this is done using constructor.
+        <bean id="c" class="day4Autowire.Car" autowire="constructor"> -->
+      
+        
+     <!-- 4> autodetect- here the IOC automatically detect the bean instance either using constructor or setters.
+          here also if more than 1 object are there we need to set autowire-candidate attribute to false.
+          Note this is done using constructor if not found then setter. 
+        <bean id="c" class="day4Autowire.Car" autowire="byType">  -->
+        
+        <property name="carName" value="AUDI"></property>
+  </bean>
+</beans>
